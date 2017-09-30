@@ -1,5 +1,4 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 10: Doubly Linked List
-======
+![cf](https://i.imgur.com/7v5ASc8.png) Lab 15: Queue
 
 ## Submission Instructions
 * Work in a fork of this repository
