@@ -10,10 +10,7 @@ describe('queue for the win', () => {
     data.enqueue('hello world');
     expect(data.dequeue()).toEqual(3);
     expect(data.dequeue()).toEqual(5);
-    expect(data.peek()).toEqual('hello world');
+    expect(data.dequeue()).toEqual('hello world');
+    expect(data.dequeue()).toBe(undefined);
   });
-
-
-
-
 });
