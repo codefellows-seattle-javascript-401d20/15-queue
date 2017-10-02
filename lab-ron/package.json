@@ -1,0 +1,25 @@
+{
+  "name": "lab-ron",
+  "version": "0.0.1",
+  "description": "Lab 15, recreating a queue",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest -i --coverage",
+    "test-watch": "jest -i --watch --coverage",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "queue",
+    "dequeue",
+    "enqueue"
+  ],
+  "author": "ronbarrantes@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "jest": "^21.2.1"
+  }
+}
