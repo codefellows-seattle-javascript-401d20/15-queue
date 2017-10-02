@@ -6,7 +6,7 @@ module.exports = () => {
     enqueue: (value) => {
       state.unshift(value);
     },
-    dequeue: (value) => {
+    dequeue: () => {
       return state.pop();
     },
   };
