@@ -14,6 +14,6 @@ describe('queue', () => {
       expect(queue.dequeue()).toEqual(2);
       expect(queue.dequeue()).toEqual(3);
       expect(queue.dequeue()).toEqual(undefined);
-    })
-  })
-})
+    });
+  });
+});
