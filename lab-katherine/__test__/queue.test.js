@@ -8,28 +8,29 @@ describe('queue', () => {
     test('the queue should have a first in first out behavior', () => {
       let queue = getQueue();
       queue.enqueue(1);
-      queue.enqueue(2);
-      queue.enqueue(3);
+      queue.enqueue(true);
+      queue.enqueue('hello');
       expect(queue.dequeue()).toEqual(1);
-      expect(queue.dequeue()).toEqual(2);
-      expect(queue.dequeue()).toEqual(3);
+      expect(queue.dequeue()).toEqual(true);
+      expect(queue.dequeue()).toEqual('hello');
       expect(queue.dequeue()).toEqual(undefined);
     });
 
     test('enqueueing undefined should dequeue undefined', () => {
       let queue = getQueue();
       queue.enqueue(undefined);
-      queue.enqueue(undefined);
-      queue.enqueue(undefined);
       queue.enqueue(1);
-      queue.enqueue(2);
-      queue.enqueue(3);
+      queue.dequeue();
+      queue.dequeue();
+      queue.enqueue(undefined);
+      queue.enqueue(true);
+      queue.enqueue(undefined);
+      queue.enqueue('hello');
       expect(queue.dequeue()).toEqual(undefined);
+      expect(queue.dequeue()).toEqual(true);
       expect(queue.dequeue()).toEqual(undefined);
+      expect(queue.dequeue()).toEqual('hello');
       expect(queue.dequeue()).toEqual(undefined);
-      expect(queue.dequeue()).toEqual(1);
-      expect(queue.dequeue()).toEqual(2);
-      expect(queue.dequeue()).toEqual(3);
     });
   });
 });
