@@ -8,3 +8,6 @@ Exports a factory function that creates a queue using a linked list architecture
 * ##### Methods
     * enqueue - Has an arity of one, and takes in any value to be stored in a queue and refers it as the last entry.
     * dequeue - Has an arity of 0, and removes the first entry on the queue and returns it to the function that called it.
+* ###### Special cases:
+    * if user does myQueue.enqueue(undefined), it sets value of that node to undefined.
+    * if user does myQueue.dequeue() on an empty queue, it returns undefined.
