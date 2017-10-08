@@ -1,13 +1,14 @@
 'use strict';
 
 module.exports = () => {
-  let queueArray = [];
+  let state = [];
   return {
-    enqueue: (value) => {//undefined
-      queueArray.push(value);
+    enqueue: (value) => {
+      state.push(value);
     },
+
     dequeue: (value) => {
-      queueArray.shift(value);
+      return state.shift(value);
     },
-  };
-};
+  }
+}
