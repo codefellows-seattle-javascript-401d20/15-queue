@@ -10,5 +10,5 @@ module.exports = () => {
     dequeue: (value) => {
       return state.shift(value);
     },
-  }
-}
+  };
+};
